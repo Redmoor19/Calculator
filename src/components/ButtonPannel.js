@@ -1,37 +1,37 @@
 import './ButtonPannel.scss';
 import Button from './Button';
 
-const ButtonPannel = () => {
+const ButtonPannel = ({changeHandler}) => {
     return(
         <div className='buttonPannel'>
             <div className="row">
-                <Button name="AC"/>
-                <Button name="+/-"/>
-                <Button name="%"/>
-                <Button name="÷" style={{backgroundColor: "#F5923E"}}/>
+                <Button changeHandler={changeHandler} name="AC"/>
+                <Button changeHandler={changeHandler} name="+/-"/>
+                <Button changeHandler={changeHandler} name="%"/>
+                <Button changeHandler={changeHandler} name="÷" style={{backgroundColor: "#F5923E", color: "#FFF"}}/>
             </div>
             <div className="row">
-                <Button name="7"/>
-                <Button name="8"/>
-                <Button name="9"/>
-                <Button name="х" style={{backgroundColor: "#F5923E"}}/>
+                <Button changeHandler={changeHandler} name="7"/>
+                <Button changeHandler={changeHandler} name="8"/>
+                <Button changeHandler={changeHandler} name="9"/>
+                <Button changeHandler={changeHandler} name="*" style={{backgroundColor: "#F5923E", color: "#FFF"}}/>
             </div>
             <div className="row">
-                <Button name="4"/>
-                <Button name="5"/>
-                <Button name="6"/>
-                <Button name="-" style={{backgroundColor: "#F5923E"}}/>
+                <Button changeHandler={changeHandler}  name="4"/>
+                <Button changeHandler={changeHandler}  name="5"/>
+                <Button changeHandler={changeHandler}  name="6"/>
+                <Button changeHandler={changeHandler} name="-" style={{backgroundColor: "#F5923E", color: "#FFF"}}/>
             </div>
             <div className="row">
-                <Button name="1"/>
-                <Button name="2"/>
-                <Button name="3"/>
-                <Button name="+" style={{backgroundColor: "#F5923E"}}/>
+                <Button changeHandler={changeHandler}  name="1"/>
+                <Button changeHandler={changeHandler}  name="2"/>
+                <Button changeHandler={changeHandler}  name="3"/>
+                <Button changeHandler={changeHandler} name="+" style={{backgroundColor: "#F5923E", color: "#FFF"}}/>
             </div>
             <div className="row">
-                <Button name="0" style={{width: "50.1%"}}/>
-                <Button name="." />
-                <Button name="=" style={{backgroundColor: "#F5923E"}}/>
+                <Button changeHandler={changeHandler}  name="0" style={{width: "50.1%"}}/>
+                <Button changeHandler={changeHandler} name="." />
+                <Button changeHandler={changeHandler} name="=" style={{backgroundColor: "#F5923E", color: "#FFF"}}/>
             </div>
         </div>
     )

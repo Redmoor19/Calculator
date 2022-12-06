@@ -1,9 +1,9 @@
 import './Display.scss';
 
-const Display = () => {
+const Display = ({display}) => {
     return(
         <div className="display">
-            22
+            {display}
         </div>
     )
 }
